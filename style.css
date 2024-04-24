@@ -35,3 +35,13 @@
 #yellow {
   background-color: yellow;
 }
+
+#random {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  user-select: none;
+}

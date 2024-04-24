@@ -15,7 +15,19 @@ function ButtonHandler(event) {
     case "blue":
       Body.style.backgroundColor = "blue";
       break;
+    case "random":
+      RandomColorPicker();
+      break;
   }
+}
+
+function RandomColorPicker() {
+  const red = Math.round(Math.random() * 255);
+  const green = Math.round(Math.random() * 255);
+  const blue = Math.round(Math.random() * 255);
+  const RandomColor = `rgb(${red}, ${green}, ${blue})`;
+
+  Body.style.backgroundColor = RandomColor;
 }
 
 ColorButton.forEach((button) =>
